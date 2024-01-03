@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Bones</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="BoneChinaFloor"]/statBases/Beauty</xpath>
+					<value>
+						<Beauty>5</Beauty>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Ammunition - Simple Ammo</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/ingredients/li/filter/thingDefs[li="BoneItem"]</xpath>
+          <success>Invert</success>
+        </li>			
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>BoneItem</li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter/thingDefs</xpath>
+            <value>
+              <li>BoneItem</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]</xpath>
+            <value>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>WoodLog</li>
+                  <li>BoneItem</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

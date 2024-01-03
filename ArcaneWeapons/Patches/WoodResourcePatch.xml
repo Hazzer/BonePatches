@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimFantasy - Arcane Weapons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneStaves"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneStaves"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>30</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWands"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWands"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBows"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBows"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>25</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBattleAxes"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBattleAxes"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneGreatswords"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneGreatswords"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneLongswords"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneLongswords"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneSpears"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneSpears"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>20</costStuffCount>
+          </value>
+        </li>
+
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWarHammers"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWarHammers"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

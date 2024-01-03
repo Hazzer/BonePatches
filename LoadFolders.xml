@@ -1,0 +1,18 @@
+<loadFolders>
+  <v1.3>
+    <li>/</li>
+    <li IfModActive="DankPyon.Medieval.Overhaul">MedievalOverhaul1.3</li>
+    <li IfModActive="com.yayo.combat3">YayoCombat3</li>
+    <li IfModActive="Sierra.RF.ArcaneWeapons">ArcaneWeapons</li>
+    <li IfModActive="LimeTreeSnake.Ammunition">LTS</li>
+    <li IfModActive="Mlie.CoalExpanded">Coal</li>
+  </v1.3>
+    <v1.4>
+    <li>/</li>
+    
+    <li IfModActive="DankPyon.Medieval.Overhaul">MedievalOverhaul</li>
+    <li IfModActive="mlie.yayoscombat3">YayoCombat3</li>
+    <li IfModActive="limetreesnake.ammo">LTSSimpleAmmo</li>
+    <li IfModActive="Mlie.CoalExpanded">Coal</li>
+  </v1.4>
+</loadFolders>
